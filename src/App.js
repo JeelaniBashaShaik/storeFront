@@ -1,11 +1,16 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
+import { Home } from './components/home';
+import './style.css';
 
 export default function App() {
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
-    </div>
+    <Provider store={store}>
+      <div>
+        <Home />
+      </div>
+    </Provider>
   );
 }
