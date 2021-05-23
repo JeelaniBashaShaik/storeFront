@@ -8,12 +8,10 @@ export const CountReducer = (state = initialState, action) => {
   console.log('inside reducer');
   switch (action.type) {
     case INCREMENT: {
-      const state = { ...state, count: count + 1 };
-      return state;
+      return { ...state, count: state.count + 1 }; 
     }
     case DECREMENT: {
-      const state = { ...state, count: count - 1 };
-      return state;
+      return { ...state, count: state.count - 1 };
     }
     default: {
       return state;
