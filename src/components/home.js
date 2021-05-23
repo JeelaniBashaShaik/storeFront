@@ -3,8 +3,8 @@ import Counter from './../containers/counter';
 
 export const Home = () => {
   return (
-    <div>
+    <React.Fragment>
       <Counter />
-    </div>
+    </React.Fragment>
   );
 };
