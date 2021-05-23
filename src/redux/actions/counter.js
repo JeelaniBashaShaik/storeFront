@@ -7,3 +7,4 @@ export const decrementCounter = () => {
     type: DECREMENT
   };
 };
+
